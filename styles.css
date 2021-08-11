@@ -11,7 +11,7 @@ body, html{
 
 /* Parent Grid */
 .parent-grid{
-    width: 60%;
+    width: 65%;
     height: 100%;
     display: grid;
     grid-template-rows: 10% 10% 80%;
@@ -62,14 +62,36 @@ input{
 }
 
 /* Child Grid - Positioning*/
-.grid-3-column{
+.grid-4-column{
     display: grid;
-    grid-template-columns: 50% 25% 25%;
-    grid-gap: 10px;
+    grid-template-columns: 50% 25% 1px 25%;
+}
+
+.side-border{
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 98%;
+    border-right: 1px solid lightgrey;  
+}
+
+.border-between-columns-2-and-3{
+    background-color: lightgrey;
+    height: 98%;
+}
+
+.article-container{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.article-container > .bottom-article{
+    border-top: 1px solid lightgrey;
+    padding-top: 20px;
 }
 
 .bottom-article{
-    margin-top: 50px;
+    position: relative;
+    top: 30px;
 }
 
 /* Image Sizing */
@@ -104,8 +126,8 @@ h4{
 }
 
 p, h3, h4{
-    margin-top: 7px;
-    margin-bottom: 7px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 /* Misc */

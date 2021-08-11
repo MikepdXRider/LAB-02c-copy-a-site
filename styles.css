@@ -11,13 +11,13 @@ body, html{
 
 /* Parent Grid */
 .parent-grid{
-    width: 75%;
+    width: 60%;
     height: 100%;
     display: grid;
     grid-template-rows: 10% 10% 80%;
 }
 
-/* NAV POSITION & STYLE */
+/* NAV Position and Styling */
 .nav-grid{
     display: grid;
     grid-template-columns: 15% 40% 30% 15%;
@@ -34,7 +34,6 @@ body, html{
     text-decoration: none;
     color: black;
 }
-
 
 .search-input{
     display: flex;
@@ -62,7 +61,7 @@ input{
     padding: 10px 1px 10px 1px;
 }
 
-/* CHILD GRID */
+/* Child Grid - Positioning*/
 .grid-3-column{
     display: grid;
     grid-template-columns: 50% 25% 25%;
@@ -73,7 +72,7 @@ input{
     margin-top: 50px;
 }
 
-/* IMAGE SIZING */
+/* Image Sizing */
 .AVClubLogo{
     width: 90%;    
     height: 90%;
@@ -104,11 +103,12 @@ h4{
     font-size: 0.8rem;
 }
 
-main{
-    border-bottom: 2px solid purple;
-}
-
 p, h3, h4{
     margin-top: 7px;
     margin-bottom: 7px;
+}
+
+/* Misc */
+main{
+    border-bottom: 2px solid purple;
 }

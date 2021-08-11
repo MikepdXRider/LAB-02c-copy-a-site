@@ -1,15 +1,18 @@
+/* Sensible Defaults */
 body, html{
     padding: 0;
     margin: 0;
     width: 100%;
-    height: 780px;
+    height: 850px;
     display: flex;
     justify-content: center;
+    font-family: sans-serif;
 }
 
+/* Parent Grid */
 .parent-grid{
-    width: 90%;
-    height: 780px;
+    width: 75%;
+    height: 100%;
     display: grid;
     grid-template-rows: 10% 10% 80%;
 }
@@ -17,7 +20,8 @@ body, html{
 /* NAV POSITION & STYLE */
 .nav-grid{
     display: grid;
-    grid-template-columns: 15% 70% 15%;
+    grid-template-columns: 15% 40% 30% 15%;
+    border-bottom: purple 1px solid;
 }
 
 .links{
@@ -27,6 +31,21 @@ body, html{
 
 .links > a{
     margin: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+
+.search-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    width: 100%;
+    border: 0;
+    height: 50%;
 }
 
 .menu{
@@ -35,25 +54,29 @@ body, html{
     align-items: center;
 }
 
-.menu > div{
-    border: 1px solid;
+.menu > button{
+    border: 1px solid purple;
+    border-radius: 50%;
+    background-color: purple;
+    color: white;
+    padding: 10px 1px 10px 1px;
 }
 
+/* CHILD GRID */
 .grid-3-column{
     display: grid;
-    grid-template-columns: 45% 27.5% 27.5%;
+    grid-template-columns: 50% 25% 25%;
+    grid-gap: 10px;
 }
 
-/* STYLING NEEDED ON THE FOLLOWING: */
-/* Space between each column */
-/* Styling on texts */
-/* Purple borders */
+.bottom-article{
+    margin-top: 50px;
+}
 
 /* IMAGE SIZING */
-
 .AVClubLogo{
-    width: 145px;    
-    height: 60px;
+    width: 90%;    
+    height: 90%;
 }
 
 .AVTVClub-logo{
@@ -68,6 +91,24 @@ body, html{
 
 .RickMorty{
     height: 170px;
-    width: 100%;
+    width: 95%;
 }
 
+/* Text Styling */
+h4{
+    color: purple;
+}
+
+.author{
+    opacity: 0.5;
+    font-size: 0.8rem;
+}
+
+main{
+    border-bottom: 2px solid purple;
+}
+
+p, h3, h4{
+    margin-top: 7px;
+    margin-bottom: 7px;
+}

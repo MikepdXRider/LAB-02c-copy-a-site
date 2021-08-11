@@ -1,7 +1,7 @@
 # LAB-02c-copy-a-site
 
 ## Reference Image
-![](./assets/reference-img.png)
+![](./assets/reference-img.PNG)
 
 ## What I practiced/learned:
  - The use of `display:grid` and `display:flex`.
